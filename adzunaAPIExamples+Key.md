@@ -8,7 +8,7 @@ Visit the Interactive Endpoint Documentation for full technical details and a pl
 Example #1: Simple jobs query
 To get twenty "Javascript Developer" jobs in the whole of UK, in JSON format, issue a GET request to:
 
-http://api.adzuna.com/v1/api/jobs/gb/search/1?app_id={YOUR API ID}&app_key={YOUR API KEY}&results_per_page=20&what=javascript%20developer&content-type=application/json
+http://api.adzuna.com/v1/api/jobs/gb/search/1?app_id={5687583093a44630affd1f5641b1f291}&app_key={YOUR API KEY}&results_per_page=20&what=javascript%20developer&content-type=application/json
 The response (certain long fields have been cropped in the example below) looks something like:
 
 {
@@ -53,7 +53,7 @@ The response (certain long fields have been cropped in the example below) looks 
 Example #2: Complex jobs query
 There are lots of parameters you can use to enhance your query. In this example, we want javascript developers with salaries over 50k (salary_min=50000), full time (full_time=1) and permanent (permanent=1) positions, to reduce ambiguity we exclude any ads that contain the keyword "Java" (what_exclude=java), we limit the results to London (where=london) and we sort by salary (sort_by=salary). The resulting GET call:
 
-http://api.adzuna.com:80/v1/api/jobs/gb/search/1?app_id={YOUR_APP_ID}&app_key={YOUR_APP_KEY}&results_per_page=20&what=javascript%20developer&what_exclude=java&where=london&sort_by=salary&salary_min=30000&full_time=1&permanent=1&content-type=application/json
+http://api.adzuna.com:80/v1/api/jobs/gb/search/1?app_id={95c2c47e}&app_key={5687583093a44630affd1f5641b1f291}&results_per_page=20&what=javascript%20developer&what_exclude=java&where=london&sort_by=salary&salary_min=30000&full_time=1&permanent=1&content-type=application/json
 will return:
 
 {
